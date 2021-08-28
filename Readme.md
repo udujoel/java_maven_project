@@ -17,12 +17,27 @@ sudo apt install openjdk-11-jdk
 mvn -v
 java -version
 ```
-- navigate to https://github.com/udujoel/java_maven_project.git
+- clone and navigate to https://github.com/udujoel/java_maven_project.git
 run:
 ```bash
 mvn clean package
 ```
+
+- CD to the /target folder to see the .jar package
+
 - for reporting:
 ```bash
 mvn clean package site
 ```
+- CD to /site and open index.html
+
+#### Parent POM (Project Object Model)
+POM is the single touchpoint for a project managed by Apache Maven.
+Parent POM is used to organise a larger project, and specify authorised artifacts at a parent level. Individual modules hold thier poms defining thier dependencies. 
+
+### LifeCycles
+- Default - for main lifecycle
+- Clean - cleans the project
+- Site - generates project documentation
+
+
